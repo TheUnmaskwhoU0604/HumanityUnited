@@ -45,33 +45,26 @@
         <button type="submit">Send Message</button>
       </form>
     </section>
-    <script>
-      document.querySelector(".btn").addEventListener("click", function () {
-        alert("Thank you for joining Humanity United!");
-      });
+        <script>
+        document.querySelector(".btn").addEventListener("click", function () {
+            alert("Thank you for joining Humanity United!");
+        });
 
-      const form = document.querySelector("form");
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        const name = form.querySelector("input[type='text']").value.trim();
-        const email = form.querySelector("input[type='email']").value.trim();
-        const message = form.querySelector("textarea").value.trim();
+        const form = document.querySelector("form");
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const name = form.querySelector("input[type='text']").value.trim();
+            const email = form.querySelector("input[type='email']").value.trim();
+            const message = form.querySelector("textarea").value.trim();
 
-        if (!name || !email || !message) {
-          alert("Please fill out all fields before sending.");
-        } else {
-          alert("Thank you for reaching out to Humanity United!");
-          form.reset(window.location.href = "thankyou.html";);
-        }
-      });
-    </script>
-    <footer>
-      <p>&copy; 2026 Humanity United. All rights reserved.</p>
-    </footer>
-    <script>
-      document.querySelector(".btn").addEventListener("click", function () {
-        alert("Thank you for joining Humanity United!");
-      });
+            if (!name || !email || !message) {
+                alert("Please fill out all fields before sending.");
+            } else {
+                alert("Thank you for reaching out to Humanity United!");
+                form.reset();
+                window.location.href = "thankyou.html";
+            }
+        });
     </script>
   </body>
 </html>
