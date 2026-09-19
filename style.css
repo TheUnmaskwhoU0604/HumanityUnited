@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Nav Bar */
+nav {
+  background: #264653;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #d4af37;
+}
+
+.logo {
+  color: #d4af37;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #d4af37;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #2a9d8f, #264653);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  display: inline-block;
+  background: #d4af37;
+  color: #264653;
+  padding: 15px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.hero .btn:hover {
+  background: #b8952e;
+}
+
+/* Values Section */
+.values {
+  text-align: center;
+  padding: 80px 20px;
+  background: #e9f5f3;
+}
+
+.values h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #264653;
+}
+
+.value-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.value-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 280px;
+  text-align: left;
+  border-top: 4px solid #2a9d8f;
+}
+
+.value-card h3 {
+  color: #2a9d8f;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 80px 20px;
+  background: #264653;
+  color: white;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #d4af37;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.contact button {
+  background: #d4af37;
+  color: #264653;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #1d3557;
+  color: #d4af37;
+  border-top: 3px solid #2a9d8f;
+}
+
+/* About Page */
+.about-hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #2a9d8f, #264653);
+  color: white;
+}
+
+.about-hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+  background: #e9f5f3;
+}
+
+.about-content h2 {
+  color: #264653;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+/* Projects Page */
+.projects-hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #2a9d8f, #264653);
+  color: white;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px;
+  background: #e9f5f3;
+}
+
+.project-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 280px;
+  text-align: center;
+  border-top: 4px solid #d4af37;
+}
+
+.project-card h3 {
+  color: #2a9d8f;
+  margin-bottom: 15px;
+}
+
+/* Donate Page */
+.donate-hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #d4af37, #264653);
+  color: white;
+}
+
+.donate-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  background: #e9f5f3;
+}
+
+.donate-form input {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.donate-form button {
+  width: 100%;
+  background: #2a9d8f;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.donate-form button:hover {
+  background: #21867a;
+}
